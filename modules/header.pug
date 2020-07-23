@@ -1,0 +1,21 @@
+mixin navLink(link, name)
+    li
+        a(href=link).nav-link=name
+
+header
+        nav.menu
+            ul
+                +navLink('#','Кто мы')
+                +navLink('#','Что мы делаем')
+                +navLink('#','Как помочь')
+                +navLink('#','Взять животное')
+
+                
+                //- li
+                //-     a(href="#") Кто мы
+                //- li
+                //-     a(href="#") что мы делааем
+                //- li
+                //-     a(href="#") Как помочь
+                //- li
+                //-     a(href="#") Взять животное
